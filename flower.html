@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flower UI</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .flower {
+      position: relative;
+      width: 150px;
+      height: 150px;
+    }
+
+    .petal {
+      position: absolute;
+      width: 60px;
+      height: 100px;
+      background-color: #ff69b4;
+      border-radius: 50%;
+    }
+
+    .petal-1 {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%) rotate(0deg);
+    }
+
+    .petal-2 {
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%) rotate(90deg);
+    }
+
+    .petal-3 {
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) rotate(180deg);
+    }
+
+    .petal-4 {
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%) rotate(270deg);
+    }
+
+    .center {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: #ffd700;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="flower">
+    <div class="petal petal-1"></div>
+    <div class="petal petal-2"></div>
+    <div class="petal petal-3"></div>
+    <div class="petal petal-4"></div>
+    <div class="center"></div>
+  </div>
+</body>
+</html>
